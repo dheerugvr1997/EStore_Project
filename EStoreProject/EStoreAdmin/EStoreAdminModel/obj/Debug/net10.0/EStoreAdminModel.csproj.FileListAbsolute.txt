@@ -1,0 +1,12 @@
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\bin\Debug\net10.0\EStoreAdminModel.deps.json
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\bin\Debug\net10.0\EStoreAdminModel.dll
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\bin\Debug\net10.0\EStoreAdminModel.pdb
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.AssemblyInfoInputs.cache
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.AssemblyInfo.cs
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.csproj.CoreCompileInputs.cache
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.sourcelink.json
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.dll
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\refint\EStoreAdminModel.dll
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\EStoreAdminModel.pdb
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModel\obj\Debug\net10.0\ref\EStoreAdminModel.dll

@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/EStoreAdmin/">
+    <Project Path="EStoreAdmin/EStoreAdminModel/EStoreAdminModel.csproj" Id="208a2509-1869-4dcc-9428-33ffeead191f" />
     <Project Path="EStoreAdmin/EStoreAdminModule/EStoreAdminModule.csproj" Id="ad2d9999-40e8-41bd-b865-fb379a7fd70b" />
   </Folder>
 </Solution>
