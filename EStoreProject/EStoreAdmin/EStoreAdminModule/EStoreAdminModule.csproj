@@ -10,4 +10,8 @@
     <ProjectReference Include="..\EStoreAdminModel\EStoreAdminModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwRoot\" />
+  </ItemGroup>
+
 </Project>

@@ -22,6 +22,7 @@ var app = builder.Build();
 //app.UseCors("AngularClient");
 
 // Pre-defined Middlewares.
+app.UseStaticFiles(); // This will enable the application to serve static files (e.g. HTML, CSS, JS, Images) from the wwwroot folder.
 app.MapControllers(); // This will map the controllers to the endpoints.
 app.UseRouting(); // This will enable routing(Action Method) for the application. (e.g. http://localhost:5000/Brand/Index , http://localhost:5000/Brand/Details/5)
 
