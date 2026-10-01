@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "EStoreAdminModule/1.0.0": {
         "dependencies": {
-          "EStoreAdminModel": "1.0.0"
+          "EStoreAdminModel": "1.0.0",
+          "EStoreAdminService": "1.0.0"
         },
         "runtime": {
           "EStoreAdminModule.dll": {}
@@ -17,6 +18,17 @@
       "EStoreAdminModel/1.0.0": {
         "runtime": {
           "EStoreAdminModel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EStoreAdminService/1.0.0": {
+        "dependencies": {
+          "EStoreAdminModel": "1.0.0"
+        },
+        "runtime": {
+          "EStoreAdminService.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -31,6 +43,11 @@
       "sha512": ""
     },
     "EStoreAdminModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EStoreAdminService/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

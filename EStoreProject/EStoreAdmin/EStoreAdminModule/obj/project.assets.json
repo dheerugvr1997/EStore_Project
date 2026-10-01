@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/EStoreAdminModel.dll": {}
         }
+      },
+      "EStoreAdminService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "EStoreAdminModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EStoreAdminService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EStoreAdminService.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../EStoreAdminModel/EStoreAdminModel.csproj",
       "msbuildProject": "../EStoreAdminModel/EStoreAdminModel.csproj"
+    },
+    "EStoreAdminService/1.0.0": {
+      "type": "project",
+      "path": "../EStoreAdminService/EStoreAdminService.csproj",
+      "msbuildProject": "../EStoreAdminService/EStoreAdminService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "EStoreAdminModel >= 1.0.0"
+      "EStoreAdminModel >= 1.0.0",
+      "EStoreAdminService >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -61,6 +80,9 @@
           "projectReferences": {
             "C:\\Users\\d.gopal.varatharajan\\Git_EstoreProject\\EStoreProject\\EStoreAdmin\\EStoreAdminModel\\EStoreAdminModel.csproj": {
               "projectPath": "C:\\Users\\d.gopal.varatharajan\\Git_EstoreProject\\EStoreProject\\EStoreAdmin\\EStoreAdminModel\\EStoreAdminModel.csproj"
+            },
+            "C:\\Users\\d.gopal.varatharajan\\Git_EstoreProject\\EStoreProject\\EStoreAdmin\\EStoreAdminService\\EStoreAdminService.csproj": {
+              "projectPath": "C:\\Users\\d.gopal.varatharajan\\Git_EstoreProject\\EStoreProject\\EStoreAdmin\\EStoreAdminService\\EStoreAdminService.csproj"
             }
           }
         }

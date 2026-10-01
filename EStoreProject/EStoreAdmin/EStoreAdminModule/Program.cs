@@ -1,9 +1,22 @@
+using EStoreAdminModel.Services;
+using EStoreAdminService;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // This will collect and create a new instance of all the Controllers
 // and register it with the dependency injection container.
 // builder.Services will create the objects of the controllers and inject them into the application.
 builder.Services.AddControllersWithViews();
+
+// This will register the BrandService with the dependency injection container.
+// This is IOC (Inversion of Control) and DI (Dependency Injection) pattern.
+// IOC is a design pattern that allows the creation of dependent objects outside of a class
+// and provides those objects to be injected into BrandController via constructor.
+// This is called Dependency Injection(Constructor Injection). This is a good practice to follow in order to achieve loose coupling between classes and to make the code more testable and maintainable.)
+builder.Services.Add(new ServiceDescriptor(
+    typeof(IBrandService),
+    typeof(BrandService), 
+    ServiceLifetime.Transient));
 
 // This is added for learning purpose. 
 // Integration issue encountered when working with Angular + ASP.NET Core.

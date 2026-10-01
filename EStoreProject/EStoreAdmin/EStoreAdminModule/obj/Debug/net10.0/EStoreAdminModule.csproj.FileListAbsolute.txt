@@ -80,3 +80,5 @@ C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStore
 C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModule\obj\Debug\net10.0\compressed\a0nikf849q-{0}-ir474ug6zy-ir474ug6zy.gz
 C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModule\obj\Debug\net10.0\compressed\rcisoajums-{0}-5cl6jzyzps-5cl6jzyzps.gz
 C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModule\obj\Debug\net10.0\compressed\vnjqdo8upb-{0}-a2c1phmbzv-a2c1phmbzv.gz
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModule\bin\Debug\net10.0\EStoreAdminService.dll
+C:\Users\d.gopal.varatharajan\Git_EstoreProject\EStoreProject\EStoreAdmin\EStoreAdminModule\bin\Debug\net10.0\EStoreAdminService.pdb
