@@ -16,7 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.Add(new ServiceDescriptor(
     typeof(IBrandService),
     typeof(BrandService), 
-    ServiceLifetime.Transient));
+    ServiceLifetime.Singleton));
 
 // This is added for learning purpose. 
 // Integration issue encountered when working with Angular + ASP.NET Core.

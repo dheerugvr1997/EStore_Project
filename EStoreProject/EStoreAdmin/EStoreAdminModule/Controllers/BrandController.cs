@@ -8,13 +8,19 @@ namespace EStoreAdminModule.Controllers
     public class BrandController : Controller
     {
         private readonly IBrandService _brandService;
+        private readonly IBrandService _brandService1;
+        private readonly IBrandService _brandService2;
 
         // Constructor Injection of IBrandService into BrandController
         // This is called Dependency Injection (DI)
         // i.e. Object is created outside of the class via IOC which injected into the class via constructor.
-        public BrandController(IBrandService brandService)
+        public BrandController(IBrandService brandService, 
+            IBrandService brandService1,
+            IBrandService brandService2)
         {
             _brandService = brandService;
+            _brandService1 = brandService1;
+            _brandService2 = brandService2;
         }
 
 
@@ -28,6 +34,12 @@ namespace EStoreAdminModule.Controllers
             //BrandService brandService = new BrandService();
             //IBrandService brandService = new BrandService();
             //brandService. => Shows only the methods defined in the IBrandService interface. But we want to access the methods defined in the BrandService class as well.
+
+            // To understand ServiceLifetime
+            ViewBag.BrandService = _brandService.GetHashCode();
+            ViewBag.BrandService1 = _brandService1.GetHashCode();
+            ViewBag.BrandService2 = _brandService2.GetHashCode();
+
 
             List<BrandModel> brandModels = _brandService.GetAllBrands();
 
