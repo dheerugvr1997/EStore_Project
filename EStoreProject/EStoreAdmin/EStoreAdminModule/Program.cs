@@ -1,5 +1,7 @@
 using EStoreAdminModel.Services;
+using EStoreAdminRepository;
 using EStoreAdminService;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,17 @@ builder.Services.AddControllersWithViews();
 builder.Services.Add(new ServiceDescriptor(
     typeof(IBrandService),
     typeof(BrandService), 
-    ServiceLifetime.Singleton));
+    ServiceLifetime.Transient));
+
+// EFCore Connection String is configured in the appsettings.json file.
+string? connectionString = builder.Configuration.GetConnectionString("EStoreConnection");
+
+// Install Microsoft.EntityFrameworkCore.SqlServer NuGet package in this project
+// Register the DbContext class in the program.cs file, and this is done by using
+// the AddDbContext method of the builder.services collection,
+// Create an object for BrandRepository as an IOC and inject it in to the BrandService class constructor, and this is done by using the constructor injection method of the dependency injection
+builder.Services.AddDbContext<BrandRepository>(options =>
+    options.UseSqlServer(connectionString));
 
 // This is added for learning purpose. 
 // Integration issue encountered when working with Angular + ASP.NET Core.
