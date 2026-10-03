@@ -54,5 +54,24 @@ namespace EStoreAdminModule.Controllers
         //    return Ok(brandModels);
         //}
         #endregion
+
+        [HttpGet]
+        [Route("DeleteBrand/{Id:guid}")]
+        public ActionResult DeleteBrand(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new ArgumentException("Invalid brand Id.");
+            }
+            _brandService.DeleteBrand(Id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("CreateBrand/")]
+        public ActionResult CreateBrand()
+        {
+            return View("CreateBrand");
+        }
     }
 }

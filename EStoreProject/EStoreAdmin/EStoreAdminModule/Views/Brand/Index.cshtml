@@ -1,5 +1,6 @@
 ﻿@using EStoreAdminModel.Models.Brands
 @model List<BrandModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <html>
 <head>
@@ -14,15 +15,11 @@
             </div>
         </div>
 
-        <div class="row mt-2">
-            <div class="col-md-4">
-                <p>Brand Service Hash Code: @ViewBag.BrandService</p>
-            </div>
-            <div class="col-md-4">
-                <p>Brand Service1 Hash Code: @ViewBag.BrandService1</p>
-            </div>
-            <div class="col-md-4">
-                <p>Brand Service2 Hash Code: @ViewBag.BrandService2</p>
+        <div class="row mt-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a class="btn btn-primary"
+                   asp-controller="Brand"
+                   asp-action="CreateBrand">Create Brand</a>
             </div>
         </div>
 
@@ -32,15 +29,33 @@
                     <tr>
                         <td class="h3">Brand Id</td>
                         <td class="h3">Brand Name</td>
+                        <td class="h3">Delete</td>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (BrandModel brandModel in Model)
+                    @if (Model == null || Model.Count == 0)
                     {
                         <tr>
-                            <td>@brandModel.Id</td>
-                            <td>@brandModel.Name</td>
+                            <td colspan="3" class="txt-center h1">No Brands Found</td>
                         </tr>
+                    }
+                    else
+                    {
+                        @foreach (BrandModel brandModel in Model)
+                        {
+                            <tr>
+                                <td>@brandModel.Id</td>
+                                <td>@brandModel.Name</td>
+                                <td>
+                                    <a class="btn btn-danger"
+                                       asp-controller="Brand"
+                                       asp-action="DeleteBrand"
+                                       asp-route-id="@brandModel.Id">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>

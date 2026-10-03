@@ -33,9 +33,24 @@ namespace EStoreAdminService
             return brandModels;
         }
 
-        public void GetBrand()
+        public void DeleteBrand(Guid Id)
         {
+            if (Id == Guid.Empty)
+            {
+                throw new ArgumentException("Invalid brand Id.");
+            }
 
+            BrandModel? brandToDelete = _brandRepository.Brands.Where(b => b.Id == Id).FirstOrDefault();
+
+            if (brandToDelete != null)
+            {
+                _brandRepository.Brands.Remove(brandToDelete);
+                _brandRepository.SaveChanges();
+            }
+            else
+            {
+                throw new InvalidOperationException("Brand not found.");
+            }
         }
     }
 }
